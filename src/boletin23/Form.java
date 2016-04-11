@@ -39,7 +39,11 @@ public class Form extends JFrame{
         limpar_btn=new JButton("Limpar");
         nome_txt=new JTextField(15);
         password_ptxt=new JPasswordField(15);
-        lista_lst=new JList();
+        DefaultListModel model = new DefaultListModel();
+        model.addElement("Hola");
+        model.addElement(4);
+        model.addElement("Hacker");
+        lista_lst=new JList(model);
         setBackground(Color.black);
         boton_btn=new JButton("Boton");
         area_txtarea=new JTextArea();
